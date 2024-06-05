@@ -1,0 +1,26 @@
+//read two numbers and print 1 for addition ,2 for subtraction,3 for multiplication and 4 for division
+#include <stdio.h>
+#include<math.h>
+int main() 
+{
+   int a,b;
+   scanf("%d%d",&a,&b);
+   int ch;
+   scanf("%d",&ch);
+   switch(ch)
+   {
+       case 1:
+       printf("%d",a+b);
+       break;
+       case 2:
+       printf("%d",a-b);
+       break;
+       case 3:
+       printf("%d",a/b);
+       break;
+       default:
+       printf("invaild");
+   }
+   
+return 0;
+}
