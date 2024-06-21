@@ -1,0 +1,9 @@
+#include <stdio.h>
+#include<string.h>
+int main() {
+    char str[50],str1[50];
+    scanf("%[^\n]s",&str);
+    strcpy(str1,str);
+    printf("%s",str,str1);
+    return 0;
+}
