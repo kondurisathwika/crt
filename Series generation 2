@@ -1,0 +1,43 @@
+Write a program to generate the following series 7, 5, 8, 6, 9….
+
+Input Format
+Read n vaue
+
+Constraints
+1<=n<=10^7
+Output Format
+Print series
+
+Sample Input 0
+5
+Sample Output 0
+7 5 8 6 9
+Sample Input 1
+10
+Sample Output 1
+7 5 8 6 9 7 10 8 11 9
+
+
+import java.io.*;
+import java.util.*;
+public class Solution {
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int n=s.nextInt();
+        int a=7,b=5,i=1;
+        int x=n;
+        n=n/2;
+        while(i<=n)
+        {
+            i++;
+            System.out.printf("%d ",a);
+            a++;
+            System.out.printf("%d ",b);
+            b++;
+             }
+        if(x%2!=0)
+        {
+        System.out.printf("%d ",a);
+    }
+    }
+}
